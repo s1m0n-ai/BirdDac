@@ -1,0 +1,42 @@
+
+.pulse {
+    
+   	animation: pulse 3s linear infinite;
+}
+
+.shake {
+    
+   	animation: shake 3s linear infinite;
+}
+
+.fade-in{
+    animation: fade-in 1s linear;
+}
+
+@-webkit-keyframes "pulse" {
+0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+50% {
+   -webkit-transform: scale(0.8);
+   transform: scale(0.8);
+}
+100% {
+    -webkit-transform: scale(1);
+   transform: scale(1);
+}
+}
+
+@-webkit-keyframes "shake" {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@-webkit-keyframes  "fade-in" {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
